@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="./css/style.css" rel="stylesheet">
+        <script src="./js/index.js"></script>
+    </head>
+    <body>
+    <div class="checkbox_demo">
+        <span>我的订单</span>
+        <ul>
+            <li>
+                <label>
+                    <input type="checkbox" name="all">
+                </label>
+                <span>全选</span>
+            </li>
+            <li>
+                <label>
+                    <input type="checkbox" name="check">
+                </label>
+                <span>选项元素1 价格：￥<b>200.00</b></span>
+            </li>
+            <li>
+                <label>
+                    <input type="checkbox" name="check">
+                </label>
+                <span>选项元素2 价格：￥<b>268.00</b></span>
+            </li>
+            <li>
+                <label>
+                    <input type="checkbox" name="check">
+                </label>
+                <span>选项元素3 价格：￥<b>372.35</b></span>
+            </li>
+            <li>
+                <label>
+                    <input type="checkbox" name="check">
+                </label>
+                <span>选项元素4 价格：￥<b>32.99</b></span>
+            </li>
+            <li>
+                <label>
+                    <input type="checkbox" name="check">
+                </label>
+                <span>选项元素5 价格：￥<b>528.37</b></span>
+            </li>
+            <li>
+                <label>
+                    总价
+                </label>
+                <span id="allPrice">￥0.00</span>
+            </li>
+        </ul>
+    </div>
+
+
+    <div class="animate_demo">
+        <div class="clear">
+            <div class="left">
+                <h1>请选择运动类型</h1>
+                <ul>
+                    <li>
+                        <label>
+                            <input type="radio" name="chooseAnimateType">
+                        </label>
+                        <span>linear(动画从头到尾的速度是相同的。)</span>
+                    </li>
+                    <li>
+                        <label>
+                            <input type="radio" name="chooseAnimateType" checked>
+                        </label>
+                        <span>ease(默认。动画以低速开始，然后加快，在结束前变慢。)</span>
+                    </li>
+                    <li>
+                        <label>
+                            <input type="radio" name="chooseAnimateType">
+                        </label>
+                        <span>ease-in(动画以低速开始。)</span>
+                    </li>
+                    <li>
+                        <label>
+                            <input type="radio" name="chooseAnimateType">
+                        </label>
+                        <span>ease-out(动画以低速结束。)</span>
+                    </li>
+                    <li>
+                        <label>
+                            <input type="radio" name="chooseAnimateType">
+                        </label>
+                        <span>ease-in-out(动画以低速开始和结束。)</span>
+                    </li>
+                </ul>
+            </div>
+
+
+            <div class="left">
+                <h1>测试窗口</h1>
+                <div class="animate_window">
+                    <div class="animate_item linear">
+                        <span>ease</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </body>
+</html>

@@ -1,0 +1,103 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "微软雅黑";
+    font-size: 14px;
+    color: #666;
+}
+li{
+    list-style: none;
+}
+.checkbox_demo{
+    width:300px;
+    height: 200px;
+    margin: 10px auto;
+}
+
+/*全局float和清除浮动（摘自bootstrap）*/
+.left{
+    float: left;
+}
+.right{
+    float: right;
+}
+.clear {
+    *zoom: 1;
+}
+.clear:before,
+.clear:after {
+    display: table;
+    line-height: 0;
+    content: "";
+}
+.clear:after {
+    clear: both;
+}
+
+.animate_demo{
+    width:900px;
+    margin: 0 auto;
+    border:solid 1px #dedede;
+    padding: 10px 15px;
+    box-sizing: border-box;
+}
+.animate_demo .left{
+    width: 50%;
+}
+.animate_demo .left h1{
+    font-weight:normal;
+    font-size: 16px;
+    color: #333;
+    line-height: 30px;
+    text-align: center;
+}
+.animate_demo .left ul>li{
+    padding: 5px 0;
+    box-sizing: border-box;
+}
+.animate_demo .left ul{
+    background: #f0f0f0;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.animate_window{
+    position: relative;
+}
+.animate_window .animate_item{
+    width: 100px;
+    height:100px;
+    background: -webkit-linear-gradient(left top,gold,red,gold,red,gold); /* Safari 5.1 - 6.0 */
+    background: -o-linear-gradient(bottom right,gold,red,gold,red,gold); /* Opera 11.1 - 12.0 */
+    background: -moz-linear-gradient(bottom right,gold,red,gold,red,gold); /* Firefox 3.6 - 15 */
+    background: linear-gradient(to bottom right,gold,red,gold,red,gold); /* 标准的语法 */
+    text-align: center;
+    line-height: 100px;
+    position: absolute;
+    left: 166px;
+    top: 29px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 12px 0px rgba(255, 0, 243, 0.71);
+}
+.animate_window .animate_item span{
+    display: inline-block;
+    color: #333;
+    font-weight: bold;
+    font-size: 17px;
+    white-space: nowrap;
+}
+
+
+.animate_window .animate_item.linear{
+    animation: gogogo 4s infinite ease;
+}
+.animate_window .animate_item.linear span{
+    animation: gogogo 2s infinite ease;
+}
+@keyframes gogogo {
+    from{
+        transform: rotateZ(0deg);
+    }
+    to{
+        transform: rotateZ( 360deg);
+    }
+}
